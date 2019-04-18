@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,900" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Color game</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Color guessing game</h1>
+        <h2 id="pickedColor">RGB(255, 23, 78)</h2>
+    </header>
+    <div id="content">
+        <nav>
+            <button id="reset">New colors</button>
+            <select id="level" name="level">
+                <div id="levels">
+                    <!-- <option selected disabled hidden>Level</option> -->
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard" selected="selected">Hard</option>
+                </div>
+            </select>
+            <span id="message"></span>
+        </nav>
+        <div class="wrapper">
+            <div class="colors"></div>
+            <div class="colors"></div>
+            <div class="colors"></div>
+            <div class="colors"></div>
+            <div class="colors"></div>
+            <div class="colors"></div>
+            <div class="colors"></div>
+            <div class="colors"></div>
+            <div class="colors"></div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
